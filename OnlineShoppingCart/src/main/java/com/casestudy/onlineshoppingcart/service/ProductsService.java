@@ -21,7 +21,7 @@ public class ProductsService {
 	}
 
 	public Products addProducts(Products products) {
-		return productsRepo.insert( products);
+		return productsRepo.insert(products);
 	}
 
 	public Products updateProducts(Products  products) {
@@ -32,8 +32,6 @@ public class ProductsService {
 		productsRepo.deleteById(id);
 	}
 
-	public Optional<Products> getProducts(@PathVariable int id) {
-		return productsRepo.findById(id);
-	}
+	public Optional<Products> getProducts(@PathVariable int id) { return productsRepo.findById(id); }
 
 }

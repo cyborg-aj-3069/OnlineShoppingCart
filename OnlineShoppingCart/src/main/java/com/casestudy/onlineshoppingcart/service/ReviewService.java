@@ -33,7 +33,7 @@ public class ReviewService {
 		reviewRepo.deleteById(id);
 	}
 
-	public Optional<Review> getUser(@PathVariable int id) {
+	public Optional<Review> getReview(@PathVariable int id) {
 		return reviewRepo.findById(id);
 	}
 

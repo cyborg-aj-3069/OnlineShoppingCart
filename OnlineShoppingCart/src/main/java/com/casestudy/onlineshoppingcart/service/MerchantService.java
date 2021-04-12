@@ -32,7 +32,7 @@ public class MerchantService {
 		merchantRepo.deleteById(id);
 	}
 
-	public Optional<Merchant> getUser(@PathVariable int id) {
+	public Optional<Merchant> getMerchant(@PathVariable int id) {
 		return merchantRepo.findById(id);
 	}
 

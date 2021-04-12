@@ -17,7 +17,7 @@ import com.casestudy.onlineshoppingcart.model.UserProfile;
 import com.casestudy.onlineshoppingcart.service.UserProfileService;
 
 @RestController
-@RequestMapping("/User")
+@RequestMapping("/user")
 public class UserProfileController {
 	
 	@Autowired

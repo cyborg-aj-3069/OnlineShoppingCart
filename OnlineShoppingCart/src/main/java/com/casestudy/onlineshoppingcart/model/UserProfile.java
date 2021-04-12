@@ -12,7 +12,18 @@ public class UserProfile {
 	private String usertype;
 	private String useremail;
 	private String usercontact;
-	
+
+	public UserProfile() {
+	}
+
+	public UserProfile(int id, String username, String usertype, String useremail, String usercontact) {
+		this.id = id;
+		this.username = username;
+		this.usertype = usertype;
+		this.useremail = useremail;
+		this.usercontact = usercontact;
+	}
+
 	public int getId() {
 		return id;
 	}

@@ -12,7 +12,14 @@ public class Products {
 	private String productCategory;
 	private String productQty;
 	private String productCompany;
-	
+
+	public Products(int id, String productName, String productCategory, String productQty, String productCompany) {
+		this.id = id;
+		this.productName = productName;
+		this.productCategory = productCategory;
+		this.productQty = productQty;
+		this.productCompany = productCompany;
+	}
 
 	public int getId() {
 		return id;

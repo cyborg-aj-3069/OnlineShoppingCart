@@ -39,8 +39,8 @@ public class ReviewController {
 	}
 	
 	@GetMapping("/{id}")
-	public Optional<Review> getUser(@PathVariable int id){
-		 return reviewService.getUser(id);
+	public Optional<Review> getReview(@PathVariable int id){
+		 return reviewService.getReview(id);
 	}
 	
 	@DeleteMapping("/{id}")

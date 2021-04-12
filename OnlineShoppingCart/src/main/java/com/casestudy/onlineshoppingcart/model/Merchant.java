@@ -11,7 +11,7 @@ public class Merchant {
 	private String firstname;
 	private String lastname;
 	private Address address;
-	private Float   income;
+	private Double   income;
 	
 	
 	public Merchant() {
@@ -20,7 +20,7 @@ public class Merchant {
 	}
 
 
-	public Merchant(String firstname, String lastname, Address address, Float income) {
+	public Merchant(String firstname, String lastname, Address address, Double income) {
 		super();
 		this.firstname = firstname;
 		this.lastname = lastname;
@@ -69,12 +69,12 @@ public class Merchant {
 	}
 
 
-	public Float getIncome() {
+	public Double getIncome() {
 		return income;
 	}
 
 
-	public void setIncome(Float income) {
+	public void setIncome(Double income) {
 		this.income = income;
 	}
 	

@@ -39,8 +39,8 @@ public class MerchantController {
 	}
 	
 	@GetMapping("/{id}")
-	public Optional<Merchant> getUser(@PathVariable int id){
-		 return merchantService.getUser(id);
+	public Optional<Merchant> getMerchant(@PathVariable int id){
+		 return merchantService.getMerchant(id);
 	}
 	
 	@DeleteMapping("/{id}")

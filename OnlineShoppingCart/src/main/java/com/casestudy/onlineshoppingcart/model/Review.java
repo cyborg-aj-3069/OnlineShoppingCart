@@ -14,6 +14,18 @@ public class Review {
 	private String ReviewerContact;
 	private String Review;
 
+	public Review() {
+	}
+
+	public Review(int id, String reviewername, String reviewertype, String reviewerEmail, String reviewerContact, String review) {
+		this.id = id;
+		Reviewername = reviewername;
+		Reviewertype = reviewertype;
+		ReviewerEmail = reviewerEmail;
+		ReviewerContact = reviewerContact;
+		Review = review;
+	}
+
 	public String getReview() {
 		return Review;
 	}
@@ -52,8 +64,12 @@ public class Review {
 	}
 	@Override
 	public String toString() {
-		return "Review [id=" + id + ", Reviewername=" + Reviewername + ", Reviewertype=" + Reviewertype
-				+ ", ReviewerEmail=" + ReviewerEmail + ", ReviewerContact=" + ReviewerContact + ", Review=" + Review
+		return "Review [id=" + id
+				+ ", Reviewername=" + Reviewername
+				+ ", Reviewertype=" + Reviewertype
+				+ ", ReviewerEmail=" + ReviewerEmail
+				+ ", ReviewerContact=" + ReviewerContact
+				+ ", Review=" + Review
 				+ "]";
 	}
 	
