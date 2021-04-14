@@ -20,7 +20,4 @@ public class Merchant {
 	private Double   income;
 
 
-
-	
-
 }
